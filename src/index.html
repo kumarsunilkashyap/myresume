@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil Kumar Kashyap</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+</head>
+<body class="max-auto">
+    <!-- navbar  -->
+  <nav class="bg-gray-800 p-4 fixed w-full z-10 top-0">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">Sunil Kumar Kashyap</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#home" class="text-gray-300 hover:text-white">Home</a>
+        <a href="#about" class="text-gray-300 hover:text-white">About</a>
+        <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+        <div class="relative group" id="services-dropdown">
+          <a href="#services" class="text-gray-300 hover:text-white">Services</a>
+          <div class="absolute hidden group-hover:block bg-gray-800 text-gray-300 mt-1 rounded-md shadow-lg"
+            id="dropdown-content">
+            <a href="#web-development" class="block px-4 py-2 hover:bg-gray-700">Web Development</a>
+            <a href="#data-analysis" class="block px-4 py-2 hover:bg-gray-700">Data Analysis</a>
+            <a href="#power-bi-dashboard" class="block px-4 py-2 hover:bg-gray-700">Power BI Dashboard</a>
+            <a href="#excel-dashboard" class="block px-4 py-2 hover:bg-gray-700">Excel Dashboard</a>
+          </div>
+        </div>
+        <a href="#skill" class="text-gray-300 hover:text-white">My Skills</a>
+        <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+      </div>
+      <button class="md:hidden text-white" id="nav-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="md:hidden flex flex-col space-y-5 mt-4" id="nav-content">
+      <a href="#home" class="text-gray-300 hover:text-white">Home</a>
+      <a href="#about" class="text-gray-300 hover:text-white">About</a>
+      <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+      <a href="#services" class="text-gray-300 hover:text-white">Services</a>
+      <a href="#skill" class="text-gray-300 hover:text-white">My Skill</a>
+      <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+   <!-- Hero Section  -->
+   <section id="home" class="bg-gray-100 h-full py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-between">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl font-bold text-gray-800 animate__animated animate__fadeInDown">
+          Welcome to My Portfolio Page
+        </h1>
+        <p class="text-gray-600 mt-4 p-5 md:p-0 animate__animated animate__fadeInLeft">
+          Hello I am Sunil Kumar Kashyap, Full Stack Web Developer. I create responsive websites and dashboards using
+          Power BI and Microsoft Advanced Excel.
+        </p>
+        <p class="text-gray-600 mt-4 animate__animated animate__fadeInRight">Showcasing my projects and skills</p>
+        <a href="#projects"
+          class="mt-8 inline-block bg-gray-800 text-white py-2 px-4 rounded transition ease-in hover:bg-indigo-800 duration-300 animate__animated animate__fadeInUp">View
+          Projects</a>
+      </div>
+      <div class="md:w-1/2 w-full mx-auto mt-8 md:mt-0 relative group">
+        <img src="./images/HomePagePhoto.png" alt="Hero Image"
+          class="w-1/2 md:w-1/2 mx-auto rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105  group-hover:scale-105 animate__animated animate__zoomIn ">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="home" class="bg-gray-100 h-full py-20">
+    <div class="container flex flex-col md:flex-row  md:justify-around">
+      <div class="md:w-1/3 flex flex-col justify-between w-full  mt-8 md:mt-0 ">
+        <img src="./images/HomePagePhoto.png" alt="Hero Image"
+          class="w-1/2 md:w-1/2 mx-auto rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105  group-hover:scale-105 animate__animated animate__zoomIn ">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-2xl md:text-3xl leading-relaxed font-bold text-gray-800">About Me</h2>
+        <p class="text-base md:text-lg text-gray-600 p-6 ">
+          My name is Sunil Kumar Kashyap, and I hold a Bachelor's degree from Kanpur University, completed in 2016. I
+          have further enhanced my skills with certifications in CCC and O Level from NIELIT. And also enhanced my skill
+          with certifications full stack web development from PW Skill. I am currently residing in Uttar Pradesh.
+          Throughout my academic and professional journey, I have developed a strong foundation in Microsoft Excel,
+          Power BI, which has equipped me with the skills and knowledge needed to excel in this domain. I am eager to
+          bring my expertise and enthusiasm to your esteemed organization.
+        </p>
+    </div>
+  </section>
+
+   <!-- My Skill Section  -->
+   <section id="skill" class="bg-gray-100 py-10">
+    <div class="p-5 md:p-0 container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 animate__animated animate__fadeInDown">My Skills</h2>
+      <p class="text-gray-600 mt-4 animate__animated animate__fadeInLeft">Some of the skills I have acquired.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">HTML</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">CSS</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">JavaScript</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">Tailwind CSS</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">React</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">Node.js</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">Express.js</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">MongoDB</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">Advanced Excel</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">Power BI</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">Tally Prime</h3>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate__animated animate__zoomIn">
+          <h3 class="text-lg font-semibold">Tally ERP 9.0</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">Projects</h2>
+      <p class="text-gray-600 mt-4">Some of the projects I've worked on.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-5 md:p-0">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/DmartSaleProject.gif" alt="D Mart Sales Dashboard"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300s" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">D Mart Sales Dashboard</h3>
+            <p class="text-gray-600 mt-2">This dashboard offers detailed analysis by ship mode, segment, region, and
+              category, enabling users to gain valuable
+              understanding and make data-driven decisions. Leveraging the powerful capabilities of Power BI, the
+              dashboard presents
+              data in a visually appealing and interactive manner, ensuring users can easily navigate and explore the
+              information.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/Saleandpurchase.png" alt="Sales and Purchase Dashboard"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Sales and Purchase Dashboard</h3>
+            <p class="text-gray-600 mt-2">I have created an advanced Power BI dashboard that offers an in-depth analysis
+              of sales and purchases. This
+              comprehensive tool provides valuable insights by breaking down data category-wise and region-wise,
+              enabling users to
+              make informed decisions. The dashboard is designed with a focus on clarity and user experience, presenting
+              data in an
+              interactive and visually appealing format.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/EStore.gif" alt="E Store Sale Dashboard"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">E Store Sale Dashboard</h3>
+            <p class="text-gray-600 mt-2">This dashboard includes sales summaries, category-wise and month-wise sales,
+              and region-wise sales insights. Created using Power BI.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/EStore.gif" alt="E Store Sale Dashboard"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">E Store Sale Dashboard</h3>
+            <p class="text-gray-600 mt-2">This dashboard includes sales summaries, category-wise and month-wise sales,
+              and region-wise sales insights. Created using Power BI.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/EStore.gif" alt="E Store Sale Dashboard"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">E Store Sale Dashboard</h3>
+            <p class="text-gray-600 mt-2">This dashboard includes sales summaries, category-wise and month-wise sales,
+              and region-wise sales insights. Created using Power BI.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/Saleandpurchase.png" alt="Sales and Purchase Dashboard"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Sales and Purchase Dashboard</h3>
+            <p class="text-gray-600 mt-2">This dashboard provides detailed analysis of sales and purchases, including
+              category-wise and region-wise insights. Created using Power BI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Web Development Section -->
+  <section id="web-development" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">Web Development</h2>
+      <p class="text-gray-600 mt-4">Here are some of the web development projects I've worked on.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-5 md:p-0">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <a href="https://kumarsunilkashyap.github.io/tools/">
+            <img src="./images/pdftools.png" alt="pdf tools"
+              class="w-full h-48 object-cover transition ease-in border-2 hover:border-gray-800 duration-300" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Online Tools Converter website</h3>
+            <p class="text-gray-600 mt-2">I've developed an online tools converter website using HTML and Tailwind CSS,
+              with AI assistance for enhancements."
+
+              If you want, I can help you with more details to make your project description even more comprehensive and
+              engaging.
+              What else would you like to highlight about your project?</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <a href="https://kumarsunilkashyap.github.io/sarkariresult">
+            <img src="./images/sarkariresultui.png" alt="sarkari result ui"
+              class="w-full h-48 object-fit transition ease-in border-2 hover:border-gray-800 duration-300" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Sarkari Result UI </h3>
+            <p class="text-gray-600 mt-2">I have successfully developed a user interface for a website similar to
+              SarkariResult.com, utilizing HTML and Tailwind
+              CSS. This project demonstrates my proficiency in web development and modern design principles. The UI is
+              designed to be
+              clean, responsive, and user-friendly, ensuring an intuitive experience for users searching for government
+              exam results
+              and related information.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <a href="https://kumarsunilkashyap.github.io/fileconverter">
+            <img src="./images/onlinetools.png" alt="online tools "
+              class="w-full h-48 object-cover transition ease-in border-2 hover:border-gray-800 duration-300" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">My Tools</h3>
+            <p class="text-gray-600 mt-2">I have developed a comprehensive suite of online tools, including an Image
+              Resizer, PDF Compressor, PDF Merger, Image
+              Converter, and PDF to JPG Converter, using HTML and Tailwind CSS with the assistance of AI. This project
+              showcases my
+              ability to create user-friendly and efficient web applications that cater to a wide range of document and
+              image
+              processing needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Analysis Section -->
+  <section id="data-analysis" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">Data Analysis</h2>
+      <p class="text-gray-600 mt-4">Here are some of the data analysis projects I've worked on.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-5 md:p-0">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="data_analysis_project1.png" alt="Data Analysis Project 1"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Data Analysis Project 1</h3>
+            <p class="text-gray-600 mt-2">Description of data analysis project 1.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="data_analysis_project2.png" alt="Data Analysis Project 2"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Data Analysis Project 2</h3>
+            <p class="text-gray-600 mt-2">Description of data analysis project 2.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="data_analysis_project3.png" alt="Data Analysis Project 3"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Data Analysis Project 3</h3>
+            <p class="text-gray-600 mt-2">Description of data analysis project 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Excel Dashboard Section -->
+  <section id="excel-dashboard" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">Excel Dashboard</h2>
+      <p class="text-gray-600 mt-4">Here are some of the Excel dashboards I've created.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-5 md:p-0">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/D-Mart Sale Dashboard image.png" alt="Excel Dashboard 1"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">D Mart Sales Dashboard</h3>
+            <p class="text-gray-600 mt-2">This dashboard offers detailed analysis by ship mode, segment, region, and
+              category, enabling users to gain valuable
+              understanding and make data-driven decisions. Leveraging the powerful capabilities of Power BI, the
+              dashboard presents
+              data in a visually appealing and interactive manner, ensuring users can easily navigate and explore the
+              information.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/Sale Regester and Purchase Regester Dashboard.png" alt="Sale And purchase"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Sale and Purchase Dashboard</h3>
+            <p class="text-gray-600 mt-2">Description of Excel dashboard 2.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="./images/Sales Dashboard Image.jpg" alt="Excel Dashboard 3"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Super Store Sales Dashboard</h3>
+            <p class="text-gray-600 mt-2">Description of Excel dashboard 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Power BI Dashboard Section -->
+  <section id="power-bi-dashboard" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">Power BI Dashboard</h2>
+      <p class="text-gray-600 mt-4">Here are some of the Power BI dashboards I've created.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-5 md:p-0">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="power_bi_dashboard1.png" alt="Power BI Dashboard 1"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Power BI Dashboard 1</h3>
+            <p class="text-gray-600 mt-2">Description of Power BI dashboard 1.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="power_bi_dashboard2.png" alt="Power BI Dashboard 2"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Power BI Dashboard 2</h3>
+            <p class="text-gray-600 mt-2">Description of Power BI dashboard 2.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+          <img src="power_bi_dashboard3.png" alt="Power BI Dashboard 3"
+            class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Power BI Dashboard 3</h3>
+            <p class="text-gray-600 mt-2">Description of Power BI dashboard 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 py-10">
+    <div class=" p-5 md:p-0 container mx-auto text-center  ">
+      <h2 class="text-3xl font-bold text-gray-800">Contact Me</h2>
+      <p class="text-gray-600 mt-4">Get in touch with me.</p>
+      <form class="max-w-lg mx-auto mt-5">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 mb-4">Name</label>
+          <input type="text" id="name"
+            class="w-full px-4 py-2 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block mb-4 text-gray-700">Email</label>
+          <input type="email" id="email"
+            class="w-full bg-white px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
+        </div>
+        <div class="mb-4">
+          <label for="subject" class="block text-gray-700 mb-4" >Subject</label>
+          <input type="text" id="subject"
+            class="w-full bg-white px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block mb-4 text-gray-700">Message</label>
+          <textarea id="message" rows="4"
+            class="w-full bg-white px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500
+              transition ease-in  duration-300">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-10 ">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="https://www.linkedin.com" target="_blank" class="text-gray-300 hover:text-white">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.1-.9-2-2-2s-2 .9-2 2v5.5h-3v-10h3v1.5c.88-1.32 2.34-2.5 4-2.5 2.76 0 5 2.24 5 5v6.5z" />
+          </svg>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-gray-300 hover:text-white">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.92 0 .386.044.762.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.423.725-.666 1.562-.666 2.457 0 1.694.863 3.188 2.175 4.065-.802-.026-1.558-.246-2.218-.616v.062c0 2.366 1.684 4.342 3.918 4.788-.41.111-.843.171-1.287.171-.315 0-.621-.031-.921-.088.622 1.943 2.428 3.355 4.568 3.395-1.674 1.312-3.778 2.096-6.065 2.096-.394 0-.779-.023-1.161-.068 2.162 1.386 4.729 2.194 7.486 2.194 8.982 0 13.89-7.438 13.89-13.89 0-.211-.005-.423-.014-.633.954-.689 1.78-1.55 2.436-2.533z" />
+          </svg>
+        </a>
+        <a href="https://www.github.com" target="_blank" class="text-gray-300 hover:text-white">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.289-1.552 3.295-1.23 3.295-1.23.655 1.649.244 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.805 5.624-5.475 5.921.43.371.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .319.216.694.825.576 4.765-1.589 8.199-6.086 8.199-11.385 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#home" class="text-gray-300 hover:text-white">Home</a>
+        <a href="#about" class="text-gray-300 hover:text-white">About</a>
+        <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+        <a href="#skill" class="text-gray-300 hover:text-white">My Skill</a>
+        <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+      </div>
+      <p class="text-gray-300">Sunil Kumar Kashyap. © 2025 All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<!-- navbar js -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var navToggle = document.getElementById("nav-toggle");
+    var navContent = document.getElementById("nav-content");
+
+    navToggle.addEventListener("click", function () {
+      if (navContent.classList.contains("hidden")) {
+        navContent.classList.remove("hidden");
+      } else {
+        navContent.classList.add("hidden");
+      }
+    });
+  });
+  var dropdownToggle = document.querySelector('.group > a');
+  var dropdownContent = document.getElementById('dropdown-content');
+
+  dropdownToggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (dropdownContent.classList.contains('hidden')) {
+      dropdownContent.classList.remove('hidden');
+    } else {
+      dropdownContent.classList.add('hidden');
+    }
+  });
+</script>
+
+</html>
