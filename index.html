@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Kumar Kashyap</title>
-    <link href="./output.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunil Kumar Kashyap</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
+
 <body class="max-auto">
-    <!-- navbar  -->
+  <!-- navbar  -->
   <nav class="bg-gray-800 p-4 fixed w-full z-10 top-0">
     <div class="container mx-auto flex justify-between items-center">
       <a href="#" class="text-white text-lg font-bold">Sunil Kumar Kashyap</a>
@@ -47,8 +49,8 @@
     </div>
   </nav>
 
-   <!-- Hero Section  -->
-   <section id="home" class="bg-gray-100 h-full py-20">
+  <!-- Hero Section  -->
+  <section id="home" class="bg-gray-100 h-full py-20">
     <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-between">
       <div class="md:w-1/2 text-center md:text-left">
         <h1 class="text-4xl font-bold text-gray-800 animate__animated animate__fadeInDown">
@@ -64,34 +66,38 @@
           Projects</a>
       </div>
       <div class="md:w-1/2 w-full mx-auto mt-8 md:mt-0 relative group">
-        <img src="./images/HomePagePhoto.png" alt="Hero Image"
+        <img src="./src/images/HomePagePhoto.png" alt="Hero Image"
           class="w-1/2 md:w-1/2 mx-auto rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105  group-hover:scale-105 animate__animated animate__zoomIn ">
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="home" class="bg-gray-100 h-full py-20">
-    <div class="container flex flex-col md:flex-row  md:justify-around">
-      <div class="md:w-1/3 flex flex-col justify-between w-full  mt-8 md:mt-0 ">
-        <img src="./images/HomePagePhoto.png" alt="Hero Image"
-          class="w-1/2 md:w-1/2 mx-auto rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105  group-hover:scale-105 animate__animated animate__zoomIn ">
+  <section id="about" class="bg-gray-100 h-full py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-around">
+      <div class="md:w-1/2 w-full mx-auto mt-8 md:mt-0 relative group">
+        <img src="./src/images/HomePagePhoto.png" alt="Hero Image"
+          class="w-2/3 md:w-1/2 mx-auto rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 group-hover:scale-105 animate__animated animate__zoomIn">
       </div>
-      <div class="md:w-1/2 text-center md:text-left">
+      <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
         <h2 class="text-2xl md:text-3xl leading-relaxed font-bold text-gray-800">About Me</h2>
-        <p class="text-base md:text-lg text-gray-600 p-6 ">
+        <p class="text-base md:text-lg text-gray-600 p-6 leading-relaxed animate__animated animate__fadeInLeft">
           My name is Sunil Kumar Kashyap, and I hold a Bachelor's degree from Kanpur University, completed in 2016. I
-          have further enhanced my skills with certifications in CCC and O Level from NIELIT. And also enhanced my skill
-          with certifications full stack web development from PW Skill. I am currently residing in Uttar Pradesh.
+          have further enhanced my skills with certifications in CCC and O Level from NIELIT, and full stack web
+          development from PW Skill. I am currently residing in Uttar Pradesh.
           Throughout my academic and professional journey, I have developed a strong foundation in Microsoft Excel,
           Power BI, which has equipped me with the skills and knowledge needed to excel in this domain. I am eager to
           bring my expertise and enthusiasm to your esteemed organization.
         </p>
+        <a href="#contact"
+          class="mt-8 inline-block bg-gray-800 text-white py-2 px-4 rounded transition ease-in hover:bg-indigo-800 duration-300 animate__animated animate__fadeInUp">Get
+          in Touch</a>
+      </div>
     </div>
   </section>
 
-   <!-- My Skill Section  -->
-   <section id="skill" class="bg-gray-100 py-10">
+  <!-- My Skill Section  -->
+  <section id="skill" class="bg-gray-100 py-10">
     <div class="p-5 md:p-0 container mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-800 animate__animated animate__fadeInDown">My Skills</h2>
       <p class="text-gray-600 mt-4 animate__animated animate__fadeInLeft">Some of the skills I have acquired.</p>
@@ -149,7 +155,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="bg-gray-100 py-20">
+  <!-- <section id="projects" class="bg-gray-100 py-20">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-800">Projects</h2>
       <p class="text-gray-600 mt-4">Some of the projects I've worked on.</p>
@@ -219,7 +225,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Web Development Section -->
   <section id="web-development" class="bg-gray-100 py-10">
@@ -229,7 +235,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-5 md:p-0">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
           <a href="https://kumarsunilkashyap.github.io/tools/">
-            <img src="./images/pdftools.png" alt="pdf tools"
+            <img src="./src/images/pdftools.png" alt="pdf tools"
               class="w-full h-48 object-cover transition ease-in border-2 hover:border-gray-800 duration-300" />
           </a>
           <div class="p-4">
@@ -244,7 +250,7 @@
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
           <a href="https://kumarsunilkashyap.github.io/sarkariresult">
-            <img src="./images/sarkariresultui.png" alt="sarkari result ui"
+            <img src="./src/images/sarkariresultui.png" alt="sarkari result ui"
               class="w-full h-48 object-fit transition ease-in border-2 hover:border-gray-800 duration-300" />
           </a>
           <div class="p-4">
@@ -261,7 +267,7 @@
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
           <a href="https://kumarsunilkashyap.github.io/fileconverter">
-            <img src="./images/onlinetools.png" alt="online tools "
+            <img src="./src/images/onlinetools.png" alt="online tools "
               class="w-full h-48 object-cover transition ease-in border-2 hover:border-gray-800 duration-300" />
           </a>
           <div class="p-4">
@@ -319,7 +325,7 @@
       <p class="text-gray-600 mt-4">Here are some of the Excel dashboards I've created.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-5 md:p-0">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-          <img src="./images/D-Mart Sale Dashboard image.png" alt="Excel Dashboard 1"
+          <img src="./src/images/D-Mart Sale Dashboard image.png" alt="Excel Dashboard 1"
             class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
           <div class="p-4">
             <h3 class="text-lg font-bold text-gray-800">D Mart Sales Dashboard</h3>
@@ -332,15 +338,21 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-          <img src="./images/Sale Regester and Purchase Regester Dashboard.png" alt="Sale And purchase"
+          <img src="./src/images/Sale Regester and Purchase Regester Dashboard.png" alt="Sale And purchase"
             class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
           <div class="p-4">
             <h3 class="text-lg font-bold text-gray-800">Sale and Purchase Dashboard</h3>
-            <p class="text-gray-600 mt-2">Description of Excel dashboard 2.</p>
+            <p class="text-gray-600 mt-2">I have created an advanced Power BI dashboard that offers an in-depth analysis
+              of sales and purchases. This
+              comprehensive tool provides valuable insights by breaking down data category-wise and region-wise,
+              enabling users to
+              make informed decisions. The dashboard is designed with a focus on clarity and user experience, presenting
+              data in an
+              interactive and visually appealing format.</p>
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-          <img src="./images/Sales Dashboard Image.jpg" alt="Excel Dashboard 3"
+          <img src="./src/images/Sales Dashboard Image.jpg" alt="Excel Dashboard 3"
             class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
           <div class="p-4">
             <h3 class="text-lg font-bold text-gray-800">Super Store Sales Dashboard</h3>
@@ -374,11 +386,17 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-          <img src="power_bi_dashboard3.png" alt="Power BI Dashboard 3"
+          <img src="./src/images/PBEStore.gif" alt="Power BI E Store Dashboard"
             class="w-full h-48 object-cover transition ease-in border hover:border-indigo-800 duration-300" />
           <div class="p-4">
-            <h3 class="text-lg font-bold text-gray-800">Power BI Dashboard 3</h3>
-            <p class="text-gray-600 mt-2">Description of Power BI dashboard 3.</p>
+            <h3 class="text-lg font-bold text-gray-800">E Store Sales Dashboard</h3>
+            <p class="text-gray-600 mt-2">This Power BI dashboard offers an in-depth analysis of sales data through
+              various dimensions. It includes total sales
+              summaries, category-wise and month-wise sales breakdowns, and region-wise sales insights. The dashboard
+              enables
+              stakeholders to make data-driven decisions by visualizing key sales metrics, identifying trends, and
+              highlighting
+              regional market opportunities.</p>
           </div>
         </div>
       </div>
@@ -387,34 +405,36 @@
 
   <!-- Contact Section -->
   <section id="contact" class="bg-gray-100 py-10">
-    <div class=" p-5 md:p-0 container mx-auto text-center  ">
-      <h2 class="text-3xl font-bold text-gray-800">Contact Me</h2>
-      <p class="text-gray-600 mt-4">Get in touch with me.</p>
-      <form class="max-w-lg mx-auto mt-5">
+    <div class="p-5 md:p-0 container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 animate__animated animate__fadeInDown">Contact Me</h2>
+      <p class="text-gray-600 mt-4 animate__animated animate__fadeInLeft">Get in touch with me.</p>
+      <form class="max-w-lg mx-auto mt-5 bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInUp">
         <div class="mb-4">
-          <label for="name" class="block text-gray-700 mb-4">Name</label>
-          <input type="text" id="name"
-            class="w-full px-4 py-2 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
+          <label for="name" class="block text-gray-700 mb-2">Name</label>
+          <input type="text" id="name" placeholder="Your Name"
+            class="w-full px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
         </div>
         <div class="mb-4">
-          <label for="email" class="block mb-4 text-gray-700">Email</label>
-          <input type="email" id="email"
-            class="w-full bg-white px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
+          <label for="email" class="block mb-2 text-gray-700">Email</label>
+          <input type="email" id="email" placeholder="Your Email"
+            class="w-full bg-gray-100 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
         </div>
         <div class="mb-4">
-          <label for="subject" class="block text-gray-700 mb-4" >Subject</label>
-          <input type="text" id="subject"
-            class="w-full bg-white px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
+          <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+          <input type="text" id="subject" placeholder="Subject"
+            class="w-full bg-gray-100 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" />
         </div>
         <div class="mb-4">
-          <label for="message" class="block mb-4 text-gray-700">Message</label>
-          <textarea id="message" rows="4"
-            class="w-full bg-white px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"></textarea>
+          <label for="message" class="block mb-2 text-gray-700">Message</label>
+          <textarea id="message" rows="4" placeholder="Your Message"
+            class="w-full bg-gray-100 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"></textarea>
         </div>
-        <button type="submit" class="w-full bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500
-              transition ease-in  duration-300">
-          Send Message
+        <button type="submit"
+          class="w-full bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition ease-in duration-300">Send
+          Message
         </button>
+
+
       </form>
     </div>
   </section>
